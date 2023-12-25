@@ -31,5 +31,8 @@ WORKDIR /usr/src/app
 # Expose the port that the server will run on
 EXPOSE 5000
 
+# Ensure nodemon is installed globally
+RUN npm install -g nodemon
+
 # Define the command to run your application
-CMD ["npm", "start"]
+CMD ["nodemon", "app.js"]
