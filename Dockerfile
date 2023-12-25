@@ -1,8 +1,8 @@
 # Use an official Node.js runtime as a parent image
 FROM node:14
 
-# Set the working directory in the container for the server
-WORKDIR /usr/src/app/server
+# Set the working directory in the container
+WORKDIR /usr/src/app
 
 # Copy server package.json and package-lock.json to the working directory
 COPY server/package*.json ./
